@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juvenal Relojoeiro | Relojoaria no Centro de Caçapava - SP</title>
+<meta name="description" content="Juvenal Relojoeiro, relojoaria desde 1980: conserto de relógios, troca de bateria e pulseiras, venda de relógios e raridades antigas. R. Treze de Maio, 99 - Centro, Caçapava - SP.">
+<meta name="theme-color" content="#120c07">
+
+<!-- Prévia ao compartilhar o link no WhatsApp/Facebook.
+     Quando o site estiver no ar, troque "img/loja-parede.webp" pelo endereço completo (ex.: https://seusite.com.br/img/loja-parede.webp) -->
+<meta property="og:title" content="Juvenal Relojoeiro">
+<meta property="og:description" content="Relojoaria no Centro de Caçapava - SP. Nota 5,0 no Google.">
+<meta property="og:image" content="img/loja-parede.webp">
+
+<!-- Fontes do Google:
+     Fraunces      = títulos "gordinhos" e arredondados, como os letreiros de loja dos anos 80
+     Courier Prime = letra de máquina de escrever, para etiquetas pequenas e horários
+     Work Sans     = texto comum, fácil de ler -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+
+<!-- ===================== CABEÇALHO (fica fixo no topo) ===================== -->
+<header>
+  <div class="wrap bar">
+    <a href="#inicio" class="brand" aria-label="Juvenal Relojoeiro - voltar ao início">
+      <span class="logo">JUVENAL</span>
+      <span class="logo-sub">relojoeiro</span>
+    </a>
+
+    <!-- botão de 3 tracinhos: só aparece no celular -->
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- links do menu (para adicionar uma seção, copie uma linha e troque o #nome) -->
+    <nav id="menu">
+      <a class="l" href="#sobre">Sobre</a>
+      <a class="l" href="#servicos">Serviços</a>
+      <a class="l" href="#loja">A loja</a>
+      <a class="l" href="#visite">Horários</a>
+      <a class="btn p" href="https://wa.me/message/7IWPRR65KAIKE1" target="_blank" rel="noopener">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== TOPO / CAPA ===================== -->
+<section id="inicio" class="hero">
+  <!-- foto de fundo da capa: para trocar, coloque outra foto na pasta img/ e mude o nome aqui -->
+  <img class="hero-bg" src="img/loja-parede.webp" alt="" width="1000" height="1333" fetchpriority="high">
+  <div class="hero-sun" aria-hidden="true"></div>
+
+  <div class="wrap hero-in">
+    <p class="tag">Caçapava · SP · Centro</p>
+    <h1>Juvenal<span>Relojoeiro</span></h1>
+    <p class="hero-call">Tradição e precisão que marcam o tempo.</p>
+
+    <!-- placa de "aberto / fechado": o script.js preenche sozinho.
+         Fechado: mostra o dia e a hora que a loja abre de novo. Aberto: mostra até que horas fica aberta. -->
+    <div class="placa">
+      <span class="placa-status" id="placaStatus">Horário de funcionamento</span>
+      <span class="placa-hora" id="placaHora">Seg a sex 09:00 – 18:00</span>
+    </div>
+
+    <div class="hero-btns">
+      <a class="btn p" href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Treze+de+Maio,+99+-+Centro,+Ca%C3%A7apava+-+SP,+12281-600" target="_blank" rel="noopener">Como chegar</a>
+      <a class="btn o" href="#servicos">Ver serviços</a>
+    </div>
+
+    <!-- nota do Google: atualize os números quando mudarem -->
+    <a class="stars" href="https://www.google.com/maps/search/?api=1&amp;query=Juvenal+Relojoeiro+R.+Treze+de+Maio+99+Ca%C3%A7apava" target="_blank" rel="noopener"><b>5,0</b> <span aria-hidden="true">★★★★★</span> 35 avaliações no Google</a>
+  </div>
+</section>
+
+<!-- ===================== SOBRE ===================== -->
+<!-- CONFIRMAR COM O JUVENAL: o texto descreve o trabalho da loja em termos gerais.
+     Se quiser contar a história da loja (ano de início, tempo de experiência), acrescente aqui. -->
+<section id="sobre" class="sec">
+  <div class="wrap sobre-in">
+    <figure class="sobre-foto">
+      <img src="img/sobre-donos.webp" alt="Dois homens de braços cruzados, os donos da loja, numa foto dentro de uma TV antiga" width="900" height="1200" loading="lazy">
+      <figcaption>Os donos da Juvenal Relojoeiro</figcaption>
+    </figure>
+
+    <div class="sobre-txt">
+      <p class="kicker">sobre</p>
+      <h2>Uma relojoaria no Centro de Caçapava</h2>
+      <p>Desde 1980, a Juvenal é uma relojoaria de bairro. Aqui o seu relógio é examinado com calma e consertado por quem gosta do ofício.</p>
+      <p>Fazemos conserto e manutenção de relógios de pulso, de bolso e de parede, troca de bateria e ajuste ou troca de pulseiras de couro, borracha e metal. Também vendemos relógios de pulso e temos peças antigas e de coleção.</p>
+      <p>Além do balcão de conserto, a loja virou um pequeno museu: relógios de vinil, TVs, rádios, telefones e placas de carro antigas enchem as paredes. Pode entrar, olhar com calma e perguntar sobre qualquer peça.</p>
+      <p>Não sabe se o seu relógio tem conserto? Traga até a loja para uma avaliação.</p>
+      <a class="btn p" href="#visite">Ver horários e endereço</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVIÇOS ===================== -->
+<!-- CONFIRMAR COM O JUVENAL: a lista abaixo é uma suposição feita a partir das fotos.
+     Apague o card que não fizer sentido ou copie um <article> inteiro para criar outro. -->
+<section id="servicos" class="sec">
+  <div class="wrap">
+    <p class="kicker">serviços</p>
+    <h2>O que fazemos</h2>
+
+    <div class="cards">
+      <article class="card">
+        <span class="ico" aria-hidden="true">01</span>
+        <h3>Conserto e manutenção</h3>
+        <p>Relógios de pulso, de bolso e de parede: revisão, limpeza e ajuste para voltar a marcar a hora certa.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico" aria-hidden="true">02</span>
+        <h3>Troca de bateria</h3>
+        <p>Bateria nova no relógio, com o fechamento feito do jeito certo.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico" aria-hidden="true">03</span>
+        <h3>Pulseiras</h3>
+        <p>Troca e ajuste de pulseiras de couro, borracha e metal.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico" aria-hidden="true">04</span>
+        <h3>Venda de relógios</h3>
+        <p>Balcão cheio de modelos de pulso para todos os estilos. Venha ver de perto.</p>
+      </article>
+
+      <article class="card">
+        <span class="ico" aria-hidden="true">05</span>
+        <h3>Raridades e antigos</h3>
+        <p>Relógios de bolso, peças antigas e itens de coleção que contam histórias.</p>
+      </article>
+    </div>
+
+    <!-- PREÇOS: se quiser mostrar preços, escreva aqui (ex.: <p class="note">Troca de bateria a partir de R$ XX</p>) -->
+    <p class="note">Tem dúvida se o seu relógio tem conserto? Traga até a loja para uma avaliação.</p>
+  </div>
+</section>
+
+<!-- ===================== FAIXA DE DESTAQUE ===================== -->
+<section class="band" aria-label="Destaque">
+  <div class="wrap band-in">
+    <p>Mais que uma relojoaria: <span>um pequeno museu</span> de relógios, TVs, rádios e placas antigas no Centro de Caçapava.</p>
+  </div>
+</section>
+
+<!-- ===================== GALERIA DA LOJA ===================== -->
+<!-- Para trocar uma foto: coloque a nova na pasta img/ (de preferência em .webp) e mude o "src" e o "alt".
+     Tamanho na grade: sem classe = 1 quadrado; "larga" = 2 colunas; "alta" = 2 linhas.
+     Para adicionar uma foto, copie uma linha <button> e ajuste o tamanho.
+     Clicar numa foto abre ela em tamanho grande (isso é feito pelo script.js). -->
+<section id="loja" class="sec">
+  <div class="wrap">
+    <p class="kicker">a loja</p>
+    <h2>Viaje no tempo</h2>
+
+    <div class="gallery">
+      <button class="g larga" type="button"><img src="img/relogios-vinil.webp" alt="Parede com relógios feitos em discos de vinil" width="1200" height="610" loading="lazy"></button>
+      <button class="g" type="button"><img src="img/relogios-de-bolso.webp" alt="Quadro com relógios de bolso e um videogame antigo transformado em relógio" width="620" height="480" loading="lazy"></button>
+      <button class="g" type="button"><img src="img/placas-antigas.webp" alt="Placas de carro antigas na parede, uma delas com o nome Juvenal" width="560" height="540" loading="lazy"></button>
+      <button class="g larga" type="button"><img src="img/balcao-relogios.webp" alt="Relógios de pulso expostos no balcão" width="700" height="380" loading="lazy"></button>
+      <button class="g" type="button"><img src="img/tvs-antigas.webp" alt="Estante com TVs e gravador de rolo antigos" width="480" height="370" loading="lazy"></button>
+      <button class="g alta" type="button"><img src="img/loja-balcao.webp" alt="Balcão de vidro com relógios, TVs antigas, prancha de surf e bandeira do Brasil" width="1000" height="1333" loading="lazy"></button>
+      <button class="g alta" type="button"><img src="img/loja-parede.webp" alt="Parede da loja com dezenas de relógios, placas e um telefone antigo" width="1000" height="1333" loading="lazy"></button>
+      <button class="g larga" type="button"><img src="img/relogios-parede-harley.webp" alt="Parede com relógio da Harley-Davidson, relógio de parede de madeira e um santo no alto" width="1000" height="1333" loading="lazy"></button>
+      <button class="g" type="button"><img src="img/telefone-radio-adesivos.webp" alt="Telefone de parede antigo de madeira e rádio cassete sobre um balcão coberto de adesivos" width="1000" height="1333" loading="lazy"></button>
+      <button class="g larga" type="button"><img src="img/estante-tvs-elvis.webp" alt="Estante com TVs antigas, gravador de rolo e pôster do Elvis Presley, perto de uma prancha de surf" width="1000" height="1333" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- janela que mostra a foto grande (fica escondida até clicar numa foto) -->
+<dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+  <button class="lb-close" type="button" aria-label="Fechar foto">×</button>
+  <img src="" alt="">
+</dialog>
+
+<!-- ===================== HORÁRIOS E ENDEREÇO ===================== -->
+<section id="visite" class="sec sec-alt">
+  <div class="wrap visit">
+    <div>
+      <p class="kicker">visite</p>
+      <h2>Horários e endereço</h2>
+
+      <!-- horários: se mudarem, troque aqui E também no script.js (parte "HORARIOS") -->
+      <table class="hours">
+        <caption class="sr">Horário de funcionamento</caption>
+        <tbody>
+          <tr data-dias="1"><th scope="row">Segunda</th><td>09:00 – 18:00</td></tr>
+          <tr data-dias="2"><th scope="row">Terça</th><td>09:00 – 18:00</td></tr>
+          <tr data-dias="3"><th scope="row">Quarta</th><td>09:00 – 18:00</td></tr>
+          <tr data-dias="4"><th scope="row">Quinta</th><td>09:00 – 18:00</td></tr>
+          <tr data-dias="5"><th scope="row">Sexta</th><td>09:00 – 18:00</td></tr>
+          <tr data-dias="6"><th scope="row">Sábado</th><td>09:30 – 17:00</td></tr>
+          <tr data-dias="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+        </tbody>
+      </table>
+
+      <address>
+        R. Treze de Maio, 99 - Centro<br>
+        Caçapava - SP, 12281-600
+      </address>
+
+      <!-- CONTATOS. Instagram: quando tiver, tire os sinais <!-- e --> da linha e troque o usuário. -->
+      <ul class="contacts">
+        <li><a href="tel:+5512991152858">(12) 99115-2858</a></li>
+        <li><a href="https://wa.me/message/7IWPRR65KAIKE1" target="_blank" rel="noopener">WhatsApp</a></li>
+        <!-- <li><a href="https://instagram.com/USUARIO" target="_blank" rel="noopener">@USUARIO</a></li> -->
+      </ul>
+
+      <a class="btn p" href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Treze+de+Maio,+99+-+Centro,+Ca%C3%A7apava+-+SP,+12281-600" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+    </div>
+
+    <!-- mapa do Google (não precisa de chave). Para trocar o local, mude o texto depois de "q=" -->
+    <div class="map">
+      <iframe title="Mapa: Juvenal Relojoeiro, R. Treze de Maio, 99 - Centro, Caçapava"
+        src="https://maps.google.com/maps?q=R.%20Treze%20de%20Maio%2C%2099%20-%20Centro%2C%20Ca%C3%A7apava%20-%20SP&amp;z=17&amp;output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer>
+  <div class="wrap foot">
+    <p class="logo">JUVENAL <span>relojoeiro</span></p>
+    <p>R. Treze de Maio, 99 - Centro, Caçapava - SP</p>
+    <p class="foot-contato"><a href="tel:+5512991152858">(12) 99115-2858</a> <span aria-hidden="true">·</span> <a href="https://wa.me/message/7IWPRR65KAIKE1" target="_blank" rel="noopener">WhatsApp</a></p>
+    <p class="small">© <span id="ano">2026</span> Juvenal Relojoeiro</p>
+  </div>
+
+  <!-- faixa de crédito, bem no fundo do rodapé -->
+  <div class="credit">
+    <div class="wrap credit-in">
+      <p>Site Desenvolvido por Vinícius Fontella</p>
+      <!-- abre uma conversa no WhatsApp com o número (12) 99107-9757 -->
+      <a class="btn credit-btn" href="https://wa.me/5512991079757" target="_blank" rel="noopener">Entre em Contato</a>
+    </div>
+  </div>
+</footer>
+
+<!-- botão flutuante de WhatsApp: fica fixo no canto, em todas as telas -->
+<a class="float-wa" href="https://wa.me/message/7IWPRR65KAIKE1" target="_blank" rel="noopener" aria-label="Chamar a Juvenal Relojoeiro no WhatsApp">
+  <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script src="script.js?v=6"></script>
+</body>
+</html>
