@@ -44,7 +44,7 @@ const HORARIOS = [
   [9 * 60, 18 * 60],           // quarta
   [9 * 60, 18 * 60],           // quinta
   [9 * 60, 18 * 60],           // sexta
-  [9 * 60 + 30, 17 * 60]       // sábado
+  [9 * 60 + 30, 14 * 60]       // sábado
 ];
 
 const placa = document.querySelector('.placa');
